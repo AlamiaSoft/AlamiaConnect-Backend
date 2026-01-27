@@ -1,0 +1,26 @@
+{
+    "name": "alamia/installer",
+    "description": "Alamia CRM Installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alamia",
+            "email": "support@alamiasoft.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Alamia\\Installer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alamia\\Installer\\Providers\\InstallerServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

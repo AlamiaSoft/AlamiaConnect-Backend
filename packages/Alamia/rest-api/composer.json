@@ -1,0 +1,29 @@
+{
+    "name": "alamia/rest-api",
+    "description": "JSON:API compliant REST API for AlamiaConnect CRM",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alamia",
+            "email": "support@alamiasoft.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alamia\\RestApi\\": "src/"
+        }
+    },
+    "require": {
+        "darkaonline/l5-swagger": "^8.6",
+        "spatie/laravel-medialibrary": "^11.17",
+        "spatie/laravel-query-builder": "^6.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alamia\\RestApi\\Providers\\AlamiaRestApiServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

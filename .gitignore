@@ -1,0 +1,81 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Package-specific node_modules (custom build system)
+/packages/Webkul/*/node_modules
+/packages/Alamia/*/node_modules
+
+# Laravel & PHP
+/.env
+/.env.backup
+/.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+
+# Laravel Storage & Cache
+/storage/*.key
+/storage/app/public
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Bootstrap Cache
+/bootstrap/cache/*
+
+# Public Storage
+/public/storage
+/public/hot
+
+# Build Outputs
+/public/build
+/public/css
+/public/js
+/public/mix-manifest.json
+
+# IDE & Editor Files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing
+.phpunit.cache
+coverage/
+.pest
+
+# Composer
+composer.phar
+
+# NPM & Yarn
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Deployment
+.deployment
+deploy.sh
+
+# Temporary Files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
