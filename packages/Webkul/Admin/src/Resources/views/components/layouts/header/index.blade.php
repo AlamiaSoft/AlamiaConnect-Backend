@@ -14,15 +14,15 @@
             @else
                 <img
                     class="h-10 max-sm:hidden"
-                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/dark-logo.svg') : vite()->asset('images/logo.svg') }}"
+                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/AlamiaConnect-Inverted-logo.png') : vite()->asset('images/AlamiaConnect-logo.png') }}"
                     id="logo-image"
                     alt="{{ config('app.name') }}"
                 />
 
                 <img
                     class="h-10 sm:hidden"
-                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/mobile-dark-logo.svg') : vite()->asset('images/mobile-light-logo.svg') }}"
-                    id="logo-image"
+                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/AlamiaConnect-Inverted-square-logo.png') : vite()->asset('images/AlamiaConnect-square-logo.png') }}"
+                    id="logo-image-mobile"
                     alt="{{ config('app.name') }}"
                 />
             @endif
@@ -142,9 +142,13 @@
                 return {
                     isDarkMode: {{ request()->cookie('dark_mode') ?? 0 }},
 
-                    logo: "{{ vite()->asset('images/logo.svg') }}",
+                    logo: "{{ vite()->asset('images/AlamiaConnect-logo.png') }}",
 
-                    dark_logo: "{{ vite()->asset('images/dark-logo.svg') }}",
+                    dark_logo: "{{ vite()->asset('images/AlamiaConnect-Inverted-logo.png') }}",
+
+                    mobile_logo: "{{ vite()->asset('images/AlamiaConnect-square-logo.png') }}",
+
+                    mobile_dark_logo: "{{ vite()->asset('images/AlamiaConnect-Inverted-square-logo.png') }}",
                 };
             },
 
@@ -163,11 +167,23 @@
                     if (this.isDarkMode) {
                         this.$emitter.emit('change-theme', 'dark');
 
-                        document.getElementById('logo-image').src = this.dark_logo;
+                        if (document.getElementById('logo-image')) {
+                            document.getElementById('logo-image').src = this.dark_logo;
+                        }
+
+                        if (document.getElementById('logo-image-mobile')) {
+                            document.getElementById('logo-image-mobile').src = this.mobile_dark_logo;
+                        }
                     } else {
                         this.$emitter.emit('change-theme', 'light');
 
-                        document.getElementById('logo-image').src = this.logo;
+                        if (document.getElementById('logo-image')) {
+                            document.getElementById('logo-image').src = this.logo;
+                        }
+
+                        if (document.getElementById('logo-image-mobile')) {
+                            document.getElementById('logo-image-mobile').src = this.mobile_logo;
+                        }
                     }
                 },
 

@@ -35,7 +35,7 @@
     @stack('meta')
 
     {{
-        vite()->set(['src/Resources/assets/css/app.css', 'src/Resources/assets/js/app.js'])
+        vite()->set(['src/Resources/assets/css/app.css', 'src/Resources/assets/js/app.js'], 'alamia-admin')
     }}
 
     <link
@@ -58,7 +58,7 @@
     @else
         <link
             type="image/x-icon"
-            href="{{ vite()->asset('images/favicon.ico') }}"
+            href="{{ vite()->asset('images/favicon.ico', 'alamia-admin') }}"
             rel="shortcut icon"
             sizes="16x16"
         />

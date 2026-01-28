@@ -2,6 +2,10 @@
 
 namespace Alamia\Admin\Providers;
 
+use Alamia\Admin\Exceptions\Handler;
+use Alamia\Admin\Http\Middleware\Bouncer as BouncerMiddleware;
+use Alamia\Admin\Http\Middleware\Locale;
+use Alamia\Admin\Http\Middleware\SanitizeUrl;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Foundation\AliasLoader;
@@ -9,10 +13,6 @@ use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Alamia\Admin\Exceptions\Handler;
-use Alamia\Admin\Http\Middleware\Bouncer as BouncerMiddleware;
-use Alamia\Admin\Http\Middleware\Locale;
-use Alamia\Admin\Http\Middleware\SanitizeUrl;
 
 class AdminServiceProvider extends ServiceProvider
 {
@@ -45,15 +45,13 @@ class AdminServiceProvider extends ServiceProvider
         Blade::anonymousComponentPath(__DIR__.'/../Resources/views/components', 'admin');
 
         $this->mergeConfigFrom(
-            dirname(__DIR__) . '/Config/alamia-vite.php',
+            dirname(__DIR__).'/Config/alamia-vite.php',
             'krayin-vite.viters'
         );
 
         $this->publishes([
-            __DIR__ . '/../../publishable/build' => public_path('admin/build'), // change the build directory from custom-package/build to your custom package name
+            __DIR__.'/../../publishable/build' => public_path('alamia-admin/build'), // change the build directory from custom-package/build to your custom package name
         ], 'public');
-
-
 
         $this->app->bind(ExceptionHandler::class, Handler::class);
 
@@ -111,6 +109,3 @@ class AdminServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(dirname(__DIR__).'/Config/attribute_entity_types.php', 'attribute_entity_types');
     }
 }
-
-
-

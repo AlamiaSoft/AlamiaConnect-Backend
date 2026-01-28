@@ -14,15 +14,15 @@
             @else
                 <img
                     class="h-10 max-sm:hidden"
-                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/dark-logo.svg') : vite()->asset('images/logo.svg') }}"
+                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/AlamiaConnect-Inverted-logo.png', 'alamia-admin') : vite()->asset('images/AlamiaConnect-logo.png', 'alamia-admin') }}"
                     id="logo-image"
                     alt="{{ config('app.name') }}"
                 />
 
                 <img
                     class="h-10 sm:hidden"
-                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/mobile-dark-logo.svg') : vite()->asset('images/mobile-light-logo.svg') }}"
-                    id="logo-image"
+                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/AlamiaConnect-Inverted-logo.png', 'alamia-admin') : vite()->asset('images/AlamiaConnect-logo.png', 'alamia-admin') }}"
+                    id="logo-image-mobile"
                     alt="{{ config('app.name') }}"
                 />
             @endif
@@ -80,7 +80,7 @@
             <x-slot:content class="mt-2 border-t-0 !p-0">
                 <div class="flex items-center gap-1.5 border border-x-0 border-b-gray-300 px-5 py-2.5 dark:border-gray-800">
                     <img
-                        src="{{ url('cache/logo.png') }}"
+                        src="{{ vite()->asset('images/AlamiaConnect-logo.png', 'alamia-admin') }}"
                         width="24"
                         height="24"
                     />
@@ -142,9 +142,9 @@
                 return {
                     isDarkMode: {{ request()->cookie('dark_mode') ?? 0 }},
 
-                    logo: "{{ vite()->asset('images/logo.svg') }}",
+                    logo: "{{ vite()->asset('images/AlamiaConnect-logo.png', 'alamia-admin') }}",
 
-                    dark_logo: "{{ vite()->asset('images/dark-logo.svg') }}",
+                    dark_logo: "{{ vite()->asset('images/AlamiaConnect-Inverted-logo.png', 'alamia-admin') }}",
                 };
             },
 
@@ -164,10 +164,16 @@
                         this.$emitter.emit('change-theme', 'dark');
 
                         document.getElementById('logo-image').src = this.dark_logo;
+                        if (document.getElementById('logo-image-mobile')) {
+                            document.getElementById('logo-image-mobile').src = this.dark_logo;
+                        }
                     } else {
                         this.$emitter.emit('change-theme', 'light');
 
                         document.getElementById('logo-image').src = this.logo;
+                        if (document.getElementById('logo-image-mobile')) {
+                            document.getElementById('logo-image-mobile').src = this.logo;
+                        }
                     }
                 },
 

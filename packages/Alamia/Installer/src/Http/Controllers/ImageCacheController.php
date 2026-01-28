@@ -19,7 +19,7 @@ class ImageCacheController
      *
      * @var string
      */
-    const AlamiaConnect_LOGO = 'https://updates.AlamiaConnectcrm.com/AlamiaConnect.png';
+    const ALAMIACONNECT_LOGO = 'https://updates.AlamiaConnectcrm.com/AlamiaConnect.png';
 
     /**
      * Get HTTP response of template applied image file
@@ -31,7 +31,7 @@ class ImageCacheController
     {
         try {
             $content = Cache::remember('AlamiaConnect-logo', 10080, function () {
-                return $this->getImageFromUrl(self::alamia_connect_LOGO);
+                return $this->getImageFromUrl(self::ALAMIACONNECT_LOGO);
             });
         } catch (\Exception $e) {
             $content = '';
@@ -106,6 +106,3 @@ class ImageCacheController
         ]);
     }
 }
-
-
-

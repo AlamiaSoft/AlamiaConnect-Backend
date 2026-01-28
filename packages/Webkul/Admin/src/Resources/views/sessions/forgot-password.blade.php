@@ -16,7 +16,7 @@
             @else
                 <img
                     class="w-max"
-                    src="{{ vite()->asset('images/logo.svg') }}"
+                    src="{{ request()->cookie('dark_mode') ? vite()->asset('images/AlamiaConnect-Inverted-logo.png') : vite()->asset('images/AlamiaConnect-logo.png') }}"
                     alt="{{ config('app.name') }}"
                 />
             @endif

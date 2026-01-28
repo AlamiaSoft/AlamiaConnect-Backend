@@ -129,7 +129,7 @@
                     <div class="m-auto grid h-[100vh] max-w-[362px] items-end">
                         <div class="grid gap-4">
                             <img
-                                src="{{ vite()->asset('images/AlamiaConnect-logo.webp', 'installer') }}"
+                                src="{{ vite()->asset('images/AlamiaConnect-logo.png', 'installer') }}"
                                 alt="AlamiaConnect Logo"
                             >
 

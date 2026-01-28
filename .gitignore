@@ -39,6 +39,15 @@ yarn-error.log
 /public/css
 /public/js
 /public/mix-manifest.json
+/public/*/build
+/public/*.hot
+/public/storage
+
+# Package-specific build outputs (redundant but explicit)
+/public/admin/build
+/public/alamia-admin/build
+/public/installer/build
+/public/webform/build
 
 # IDE & Editor Files
 .idea

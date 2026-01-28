@@ -29,7 +29,7 @@ window.app = createApp({
     },
 
     methods: {
-        onSubmit() {},
+        onSubmit() { },
 
         onInvalidSubmit({ values, errors, results }) {
             setTimeout(() => {

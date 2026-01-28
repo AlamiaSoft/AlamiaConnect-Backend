@@ -16,7 +16,7 @@
             @else
                 <img
                     class="w-[400px]"
-                    src="{{ vite()->asset('images/AlamiaConnect-logo.webp') }}"
+                    src="{{ vite()->asset('images/AlamiaConnect-logo.png') }}"
                     alt="{{ config('app.name') }}"
                 />
             @endif

@@ -1,39 +1,67 @@
 {
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-e0866a20.css",
+    "file": "assets/app-28e5797f.css",
     "isEntry": true,
     "src": "src/Resources/assets/css/app.css"
   },
   "src/Resources/assets/fonts/icomoon.eot": {
-    "file": "assets/icomoon-1bcfcf1d.eot",
+    "file": "assets/icomoon-0c83df01.eot",
     "src": "src/Resources/assets/fonts/icomoon.eot"
   },
   "src/Resources/assets/fonts/icomoon.svg": {
-    "file": "assets/icomoon-c96ab384.svg",
+    "file": "assets/icomoon-f43f5a5c.svg",
     "src": "src/Resources/assets/fonts/icomoon.svg"
   },
   "src/Resources/assets/fonts/icomoon.ttf": {
-    "file": "assets/icomoon-c6be70b2.ttf",
+    "file": "assets/icomoon-af337922.ttf",
     "src": "src/Resources/assets/fonts/icomoon.ttf"
   },
   "src/Resources/assets/fonts/icomoon.woff": {
-    "file": "assets/icomoon-81aea726.woff",
+    "file": "assets/icomoon-d87e74ec.woff",
     "src": "src/Resources/assets/fonts/icomoon.woff"
   },
+  "src/Resources/assets/images/AlamiaConnect-Inverted-logo - Copy.png": {
+    "file": "assets/AlamiaConnect-Inverted-logo - Copy-56a0188f.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-Inverted-logo - Copy.png"
+  },
+  "src/Resources/assets/images/AlamiaConnect-Inverted-logo.png": {
+    "file": "assets/AlamiaConnect-Inverted-logo-5e09f3d2.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-Inverted-logo.png"
+  },
+  "src/Resources/assets/images/AlamiaConnect-Inverted-square-logo.png": {
+    "file": "assets/AlamiaConnect-Inverted-square-logo-103d9e7e.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-Inverted-square-logo.png"
+  },
+  "src/Resources/assets/images/AlamiaConnect-logo-.webp": {
+    "file": "assets/AlamiaConnect-logo-641fa0d6.webp",
+    "src": "src/Resources/assets/images/AlamiaConnect-logo.webp"
+  },
+  "src/Resources/assets/images/AlamiaConnect-logo.png": {
+    "file": "assets/AlamiaConnect-logo-64ffe97e.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-logo.png"
+  },
+  "src/Resources/assets/images/AlamiaConnect-logo.webp": {
+    "file": "assets/AlamiaConnect-logo-641fa0d6.webp",
+    "src": "src/Resources/assets/images/AlamiaConnect-logo.webp"
+  },
+  "src/Resources/assets/images/AlamiaConnect-square-logo.png": {
+    "file": "assets/AlamiaConnect-square-logo-cb451141.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-square-logo.png"
+  },
+  "src/Resources/assets/images/Krayin-logo.svg": {
+    "file": "assets/Krayin-logo-06ea22fa.svg",
+    "src": "src/Resources/assets/images/Krayin-logo.svg"
+  },
   "src/Resources/assets/images/favicon.ico": {
-    "file": "assets/favicon-a99d4e55.ico",
+    "file": "assets/favicon-72eaeed0.ico",
     "src": "src/Resources/assets/images/favicon.ico"
   },
-  "src/Resources/assets/images/krayin-logo.svg": {
-    "file": "assets/krayin-logo-4636add7.svg",
-    "src": "src/Resources/assets/images/krayin-logo.svg"
-  },
   "src/Resources/assets/images/spinner.svg": {
-    "file": "assets/spinner-51c5cf50.svg",
+    "file": "assets/spinner-b2e0d012.svg",
     "src": "src/Resources/assets/images/spinner.svg"
   },
   "src/Resources/assets/js/app.js": {
-    "file": "assets/app-aec2df31.js",
+    "file": "assets/app-7dc59498.js",
     "isEntry": true,
     "src": "src/Resources/assets/js/app.js"
   }

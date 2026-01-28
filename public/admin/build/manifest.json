@@ -264,84 +264,104 @@
     "isDynamicEntry": true
   },
   "src/Resources/assets/css/app.css": {
-    "file": "assets/app-CsHc-luz.css",
+    "file": "assets/app-CbQIEEQX.css",
     "src": "src/Resources/assets/css/app.css",
     "isEntry": true
   },
   "src/Resources/assets/fonts/icomoon.woff": {
-    "file": "assets/icomoon-ipkQeo8T.woff",
+    "file": "assets/icomoon-BbY1GX-d.woff",
     "src": "src/Resources/assets/fonts/icomoon.woff"
   },
+  "src/Resources/assets/images/AlamiaConnect-Inverted-logo.png": {
+    "file": "assets/AlamiaConnect-Inverted-logo--eYeUy9r.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-Inverted-logo.png"
+  },
+  "src/Resources/assets/images/AlamiaConnect-Inverted-square-logo.png": {
+    "file": "assets/AlamiaConnect-Inverted-square-logo-DhTHAkpl.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-Inverted-square-logo.png"
+  },
+  "src/Resources/assets/images/AlamiaConnect-logo.png": {
+    "file": "assets/AlamiaConnect-logo-to3K2cli.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-logo.png"
+  },
+  "src/Resources/assets/images/AlamiaConnect-logos.webp": {
+    "file": "assets/AlamiaConnect-logos-CUv3D-dH.webp",
+    "src": "src/Resources/assets/images/AlamiaConnect-logos.webp"
+  },
+  "src/Resources/assets/images/AlamiaConnect-square-logo.png": {
+    "file": "assets/AlamiaConnect-square-logo-ZtNbqPXv.png",
+    "src": "src/Resources/assets/images/AlamiaConnect-square-logo.png"
+  },
   "src/Resources/assets/images/corner-clip.svg": {
-    "file": "assets/corner-clip-DkXF0v9Y.svg",
+    "file": "assets/corner-clip-CRLTKrCT.svg",
     "src": "src/Resources/assets/images/corner-clip.svg"
   },
   "src/Resources/assets/images/dark-corner-clip.svg": {
-    "file": "assets/dark-corner-clip-OEjlyRmF.svg",
+    "file": "assets/dark-corner-clip-Deux0RQO.svg",
     "src": "src/Resources/assets/images/dark-corner-clip.svg"
   },
   "src/Resources/assets/images/dark-logo.svg": {
-    "file": "assets/dark-logo-DA6am6Md.svg",
+    "file": "assets/dark-logo-Dnw3cpYj.svg",
     "src": "src/Resources/assets/images/dark-logo.svg"
   },
   "src/Resources/assets/images/empty-placeholders/activities.svg": {
-    "file": "assets/activities-D0-rBiEx.svg",
+    "file": "assets/activities-DpB2XKqX.svg",
     "src": "src/Resources/assets/images/empty-placeholders/activities.svg"
   },
   "src/Resources/assets/images/empty-placeholders/calls.svg": {
-    "file": "assets/calls-U2ox1sqa.svg",
+    "file": "assets/calls-BU_UfDax.svg",
     "src": "src/Resources/assets/images/empty-placeholders/calls.svg"
   },
   "src/Resources/assets/images/empty-placeholders/default.svg": {
-    "file": "assets/default-CociA45s.svg",
+    "file": "assets/default-DBulZ5O_.svg",
     "src": "src/Resources/assets/images/empty-placeholders/default.svg"
   },
   "src/Resources/assets/images/empty-placeholders/description.svg": {
-    "file": "assets/description-CiO7_cKO.svg",
+    "file": "assets/description-BwifbkWG.svg",
     "src": "src/Resources/assets/images/empty-placeholders/description.svg"
   },
   "src/Resources/assets/images/empty-placeholders/emails.svg": {
-    "file": "assets/emails-Bpro_KLs.svg",
+    "file": "assets/emails-D_qEBj20.svg",
     "src": "src/Resources/assets/images/empty-placeholders/emails.svg"
   },
   "src/Resources/assets/images/empty-placeholders/files.svg": {
-    "file": "assets/files-CfNClHAx.svg",
+    "file": "assets/files-Xm-jQ6Fi.svg",
     "src": "src/Resources/assets/images/empty-placeholders/files.svg"
   },
   "src/Resources/assets/images/empty-placeholders/lunches.svg": {
-    "file": "assets/lunches-DoXXS8Hx.svg",
+    "file": "assets/lunches-BHeSbGQ3.svg",
     "src": "src/Resources/assets/images/empty-placeholders/lunches.svg"
   },
   "src/Resources/assets/images/empty-placeholders/meetings.svg": {
-    "file": "assets/meetings-mlafZNgm.svg",
+    "file": "assets/meetings-Cwj897qL.svg",
     "src": "src/Resources/assets/images/empty-placeholders/meetings.svg"
   },
   "src/Resources/assets/images/empty-placeholders/notes.svg": {
-    "file": "assets/notes-BDlaIF8S.svg",
+    "file": "assets/notes-BdIILF0F.svg",
     "src": "src/Resources/assets/images/empty-placeholders/notes.svg"
   },
   "src/Resources/assets/images/empty-placeholders/organizations.svg": {
-    "file": "assets/organizations-D8k6ZKdK.svg",
+    "file": "assets/organizations-aUdNng-O.svg",
     "src": "src/Resources/assets/images/empty-placeholders/organizations.svg"
   },
   "src/Resources/assets/images/empty-placeholders/pipedrive.svg": {
-    "file": "assets/pipedrive-DfgKIsxA.svg",
+    "file": "assets/pipedrive-Dk_Mji0J.svg",
     "src": "src/Resources/assets/images/empty-placeholders/pipedrive.svg"
   },
   "src/Resources/assets/images/empty-placeholders/plans.svg": {
-    "file": "assets/plans-C3urSSDR.svg",
+    "file": "assets/plans-DIcOmGwv.svg",
     "src": "src/Resources/assets/images/empty-placeholders/plans.svg"
   },
   "src/Resources/assets/images/empty-placeholders/products.svg": {
-    "file": "assets/products-BTUjXmLg.svg",
+    "file": "assets/products-zDh6UFtz.svg",
     "src": "src/Resources/assets/images/empty-placeholders/products.svg"
   },
   "src/Resources/assets/images/empty-placeholders/quotes.svg": {
-    "file": "assets/quotes-CouVV-E2.svg",
+    "file": "assets/quotes-0H7ZCVr6.svg",
     "src": "src/Resources/assets/images/empty-placeholders/quotes.svg"
   },
   "src/Resources/assets/images/empty-placeholders/users.svg": {
-    "file": "assets/users-Dntrjuip.svg",
+    "file": "assets/users-6trD5il1.svg",
     "src": "src/Resources/assets/images/empty-placeholders/users.svg"
   },
   "src/Resources/assets/images/error.svg": {
@@ -349,23 +369,23 @@
     "src": "src/Resources/assets/images/error.svg"
   },
   "src/Resources/assets/images/favicon.ico": {
-    "file": "assets/favicon-DlHso81F.ico",
+    "file": "assets/favicon-BtbgZBji.ico",
     "src": "src/Resources/assets/images/favicon.ico"
   },
   "src/Resources/assets/images/logo.svg": {
-    "file": "assets/logo-BK2ykVQc.svg",
+    "file": "assets/logo-BhBQEwkT.svg",
     "src": "src/Resources/assets/images/logo.svg"
   },
   "src/Resources/assets/images/mobile-dark-logo.svg": {
-    "file": "assets/mobile-dark-logo-CuhjcJjc.svg",
+    "file": "assets/mobile-dark-logo-COPgCide.svg",
     "src": "src/Resources/assets/images/mobile-dark-logo.svg"
   },
   "src/Resources/assets/images/mobile-light-logo.svg": {
-    "file": "assets/mobile-light-logo-BNV2pcGR.svg",
+    "file": "assets/mobile-light-logo-CjoobCkl.svg",
     "src": "src/Resources/assets/images/mobile-light-logo.svg"
   },
   "src/Resources/assets/js/app.js": {
-    "file": "assets/app-C3EhdrrK.js",
+    "file": "assets/app-AijwEKmX.js",
     "name": "app",
     "src": "src/Resources/assets/js/app.js",
     "isEntry": true,

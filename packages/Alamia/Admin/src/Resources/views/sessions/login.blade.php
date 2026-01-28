@@ -15,13 +15,13 @@
                 />
             @else
                 <img
-                    class="w-[400px]"
-                    src="{{ vite()->asset('images/AlamiaConnect-logo.webp', 'admin') }}"
+                    class="w-[250px]"
+                    src="{{ vite()->asset('images/AlamiaConnect-logo.png', 'admin') }}"
                     alt="{{ config('app.name') }}"
                 />
             @endif
 
-            <p class="text-sm font-semibold text-gray-600">Alamia Packages</p>
+            <!-- <p class="text-sm font-semibold text-gray-600">Alamia Packages</p> -->
 
             <div class="box-shadow flex min-w-[300px] flex-col rounded-md bg-white dark:bg-gray-900">
                 {!! view_render_event('admin.sessions.login.form_controls.before') !!}

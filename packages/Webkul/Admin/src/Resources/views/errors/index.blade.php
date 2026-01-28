@@ -11,8 +11,8 @@
                 <img
                     src="{{ 
                         request()->cookie('dark_mode') 
-                        ? vite()->asset('images/dark-logo.svg') 
-                        : vite()->asset('images/logo.svg') 
+                        ? vite()->asset('images/AlamiaConnect-Inverted-logo.png') 
+                        : vite()->asset('images/AlamiaConnect-logo.png') 
                     }}"
                     class="w-40 ltr:pr-16 rtl:pl-16"
                 >

@@ -36,7 +36,7 @@ module.exports = {
             }
         },
     },
-    
+
     darkMode: 'class',
 
     plugins: [],
@@ -44,6 +44,15 @@ module.exports = {
     safelist: [
         {
             pattern: /icon-/,
-        }
+        },
+        'icon-dashboard',
+        'icon-leads',
+        'icon-contact',
+        'icon-organization',
+        'icon-product',
+        'icon-quote',
+        'icon-activity',
+        'icon-mail',
+        'icon-settings',
     ]
 };

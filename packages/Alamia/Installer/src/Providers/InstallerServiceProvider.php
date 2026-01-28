@@ -2,12 +2,12 @@
 
 namespace Alamia\Installer\Providers;
 
-use Illuminate\Routing\Router;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\ServiceProvider;
 use Alamia\Installer\Console\Commands\Installer as InstallerCommand;
 use Alamia\Installer\Http\Middleware\CanInstall;
 use Alamia\Installer\Http\Middleware\Locale;
+use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\ServiceProvider;
 
 class InstallerServiceProvider extends ServiceProvider
 {
@@ -60,8 +60,7 @@ class InstallerServiceProvider extends ServiceProvider
         $this->commands([
             InstallerCommand::class,
             \Alamia\Installer\Console\Commands\AutoInstaller::class,
+            \Alamia\Installer\Console\Commands\DockerInstaller::class,
         ]);
     }
 }
-
-

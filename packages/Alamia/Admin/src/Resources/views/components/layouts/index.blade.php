@@ -44,7 +44,7 @@
     @stack('meta')
 
     {{
-        vite()->set(['src/Resources/assets/css/app.css', 'src/Resources/assets/js/app.js'])
+        vite()->set(['src/Resources/assets/css/app.css', 'src/Resources/assets/js/app.js'], 'alamia-admin')
     }}
 
     <link
@@ -52,11 +52,7 @@
         rel="stylesheet"
     />
 
-    <link
-        rel="preload"
-        as="image"
-        href="{{ url('cache/logo/bagisto.png') }}"
-    >
+
 
     @if ($favicon = core()->getConfigData('general.design.admin_logo.favicon'))
         <link
