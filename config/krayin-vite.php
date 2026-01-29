@@ -16,6 +16,11 @@ return [
             'build_directory'          => 'admin/build',
             'package_assets_directory' => 'src/Resources/assets',
         ],
+        'alamia-admin' => [
+            'hot_file'                 => 'alamia-admin-vite.hot',
+            'build_directory'          => 'alamia-admin/build',
+            'package_assets_directory' => 'src/Resources/assets',
+        ],
 
         'installer' => [
             'hot_file'                 => 'installer-vite.hot',
