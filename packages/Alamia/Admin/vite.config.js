@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => {
             vue(),
 
             laravel({
-                hotFile: "../../../public/admin-vite.hot",
+                hotFile: "../../../public/alamia-admin-vite.hot",
                 publicDirectory: "../../../public",
                 buildDirectory: "alamia-admin/build",
                 input: [
