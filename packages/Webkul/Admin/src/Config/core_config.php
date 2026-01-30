@@ -58,7 +58,7 @@ return [
                 'name'       => 'label',
                 'title'      => 'admin::app.configuration.index.general.settings.footer.powered-by',
                 'type'       => 'editor',
-                'default'    => 'Powered by <span style="color: rgb(14, 144, 217);"><a href="https://alamiaconnect.com" target="_blank">AlamiaConnect</a></span>, an open-source project by <span style="color: rgb(14, 144, 217);"><a href="https://alamiasoft.com" target="_blank">AlamiaSoft</a></span>.',
+                'default'    => 'Powered by <span style="color: rgb(14, 144, 217);"><a href="https://alamiaconnect.com" target="_blank">AlamiaConnect</a></span>, a project by <span style="color: rgb(14, 144, 217);"><a href="https://alamiasoft.com" target="_blank">AlamiaSoft</a></span>.',
                 'tinymce'    => true,
             ],
         ],
