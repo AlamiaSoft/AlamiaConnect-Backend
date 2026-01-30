@@ -204,10 +204,10 @@ return [
          */
         //Alamia\Base\Providers\BaseServiceProvider::class,
         Alamia\Installer\Providers\InstallerServiceProvider::class,
-        Alamia\Admin\Providers\AdminServiceProvider::class,
+        //Alamia\Admin\Providers\AdminServiceProvider::class,
         Alamia\RestApi\Providers\AlamiaRestApiServiceProvider::class,
 
-        Alamia\Admin\Providers\AdminServiceProvider::class,
+        Webkul\Admin\Providers\AdminServiceProvider::class,
         /*
          * Webkul Service Providers...
          */
