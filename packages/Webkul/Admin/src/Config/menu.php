@@ -11,6 +11,16 @@ return [
         'sort'       => 1,
         'icon-class' => 'icon-dashboard',
     ],
+    /**
+     * Live Assistant.
+     */
+    [
+        'key'        => 'ai_assistant',
+        'name'       => 'Live Assistant',
+        'route'      => 'admin.ai.assistant',
+        'sort'       => 2,
+        'icon-class' => 'icon-leads', // Reusing an existing icon class for now
+    ],
 
     /**
      * Leads.

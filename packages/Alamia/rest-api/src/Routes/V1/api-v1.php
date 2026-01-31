@@ -64,4 +64,9 @@ Route::group(['prefix' => 'v1'], function () {
      * System routes.
      */
     require 'system-routes.php';
+
+    /**
+     * AI Discovery routes.
+     */
+    require 'ai-routes.php';
 });

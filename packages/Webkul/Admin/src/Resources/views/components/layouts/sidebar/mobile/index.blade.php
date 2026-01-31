@@ -51,6 +51,7 @@
                             >
                                 <a
                                     href="{{ ! in_array($menuItem->getKey(), ['settings', 'configuration']) && $menuItem->haveChildren() ? 'javascript:void(0)' : $menuItem->getUrl() }}"
+                                    target="{{ $menuItem->getKey() == 'ai_assistant' ? '_blank' : '_self' }}"
                                     class="menu-link flex items-center justify-between rounded-lg p-2 transition-colors duration-200"
                                     @if ($menuItem->haveChildren() && !in_array($menuKey, ['settings', 'configuration']))
                                         @click.prevent="toggleMenu('{{ $menuKey }}')"
