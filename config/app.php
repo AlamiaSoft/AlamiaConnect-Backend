@@ -206,6 +206,8 @@ return [
         Alamia\Installer\Providers\InstallerServiceProvider::class,
         //Alamia\Admin\Providers\AdminServiceProvider::class,
         Alamia\RestApi\Providers\AlamiaRestApiServiceProvider::class,
+        Alamia\KTD\Providers\KTDServiceProvider::class,
+        App\Providers\McpToolsServiceProvider::class,
 
         Webkul\Admin\Providers\AdminServiceProvider::class,
         /*

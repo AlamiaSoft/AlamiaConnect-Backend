@@ -1,0 +1,11 @@
+{
+    "name": "alamia/ktd",
+    "description": "KTD CRM Extension",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alamia\\KTD\\": "src/"
+        }
+    }
+}
