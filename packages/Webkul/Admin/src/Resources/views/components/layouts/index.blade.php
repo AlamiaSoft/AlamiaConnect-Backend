@@ -112,17 +112,18 @@
         @php
             $billingStatus = core()->getConfigData('billing.subscription.settings.status');
             $portalUrl = core()->getConfigData('billing.subscription.settings.portal_url');
+            $portalLabel = core()->getConfigData('billing.subscription.settings.portal_label') ?? 'View Invoice';
         @endphp
 
         @if ($billingStatus == 'overdue')
             <div style="background-color: #fce8e6; color: #d93025; padding: 10px; text-align: center; border-bottom: 1px solid #d93025; font-size: 14px;">
-                <strong>Attention:</strong> Your monthly invoice is overdue. Please <a href="{{ $portalUrl }}" target="_blank" style="text-decoration: underline; font-weight: bold;">click here to pay</a> to avoid service interruption.
+                <strong>Attention:</strong> Your monthly invoice is overdue. Please <a href="{{ $portalUrl }}" target="_blank" style="text-decoration: underline; font-weight: bold;">click here to {{ strtolower($portalLabel) }}</a> to avoid service interruption.
             </div>
         @elseif ($billingStatus == 'suspended')
             <div style="background-color: #d93025; color: #ffffff; padding: 20px; text-align: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: sans-serif;">
                 <h1 style="font-size: 3rem; margin-bottom: 20px; font-weight: 800;">Subscription Suspended</h1>
                 <p style="font-size: 1.5rem; margin-bottom: 40px; max-width: 600px;">Your access to AlamiaConnect has been suspended due to an unpaid monthly invoice.</p>
-                <a href="{{ $portalUrl }}" target="_blank" style="background-color: #ffffff; color: #d93025; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: 800; font-size: 1.25rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">GO TO PAYMENT PORTAL</a>
+                <a href="{{ $portalUrl }}" target="_blank" style="background-color: #ffffff; color: #d93025; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: 800; font-size: 1.25rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">{{ strtoupper($portalLabel) }}</a>
             </div>
         @endif
 

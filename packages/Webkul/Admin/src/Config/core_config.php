@@ -360,6 +360,12 @@ return [
                 'title'   => 'Zoho Invoice Portal URL',
                 'type'    => 'text',
                 'info'    => 'Link where users can pay their invoices',
+            ], [
+                'name'    => 'portal_label',
+                'title'   => 'Portal Button Label',
+                'type'    => 'text',
+                'default' => 'View Invoice',
+                'info'    => 'Text for the action button (e.g., "See Bank Details" or "Billing Portal")',
             ],
         ],
     ],

@@ -36,6 +36,7 @@ class UserResource extends JsonResource
             'billing'         => [
                 'subscription_status' => core()->getConfigData('billing.subscription.settings.status'),
                 'portal_url'          => core()->getConfigData('billing.subscription.settings.portal_url'),
+                'portal_label'        => core()->getConfigData('billing.subscription.settings.portal_label') ?? 'View Invoice',
             ],
         ])['data'];
     }
