@@ -23,6 +23,7 @@ class KtdSetupSeeder extends Seeder
             KtdAttributeSeeder::class,
             KtdPipelineSeeder::class,
             KtdWorkflowSeeder::class,
+            KtdProductSeeder::class,
             KtdTestLeadSeeder::class,
         ]);
 
