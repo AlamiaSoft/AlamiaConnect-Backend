@@ -366,6 +366,11 @@ return [
                 'type'    => 'text',
                 'default' => 'View Invoice',
                 'info'    => 'Text for the action button (e.g., "See Bank Details" or "Billing Portal")',
+            ], [
+                'name'    => 'test_button',
+                'title'   => 'Test Webhook',
+                'type'    => 'blade',
+                'path'    => 'admin::configuration.test-webhook',
             ],
         ],
     ],

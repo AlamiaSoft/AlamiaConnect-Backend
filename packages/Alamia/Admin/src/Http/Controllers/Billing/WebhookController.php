@@ -55,9 +55,19 @@ class WebhookController extends Controller
                 $this->updateSubscriptionStatus('overdue');
                 break;
 
+            case 'client_suspended':
+                $this->updateSubscriptionStatus('suspended');
+                break;
+
+            case 'customer_active':
+            case 'invoice_sent':
+            case 'payment_received':
+                $this->updateSubscriptionStatus('active');
+                break;
+
             case 'invoice_voided':
             case 'payment_refunded':
-                // Optional: maybe don't suspend immediately on refund unless it's full
+                // Optional: handle refunds or cancellations
                 break;
         }
 
