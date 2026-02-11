@@ -311,4 +311,56 @@ return [
             ],
         ],
     ],
+
+    /**
+     * Billing.
+     */
+    [
+        'key'  => 'billing',
+        'name' => 'Billing',
+        'info' => 'Subscription and billing settings',
+        'sort' => 5,
+    ], [
+        'key'  => 'billing.subscription',
+        'name' => 'Subscription',
+        'info' => 'Manage CRM subscription status',
+        'icon' => 'icon-settings',
+        'sort' => 1,
+    ], [
+        'key'    => 'billing.subscription.settings',
+        'name'   => 'General Settings',
+        'info'   => 'Core billing configuration',
+        'sort'   => 1,
+        'fields' => [
+            [
+                'name'    => 'status',
+                'title'   => 'Subscription Status',
+                'type'    => 'select',
+                'options' => [
+                    [
+                        'title' => 'Active',
+                        'value' => 'active',
+                    ], [
+                        'title' => 'Overdue',
+                        'value' => 'overdue',
+                    ], [
+                        'title' => 'Suspended',
+                        'value' => 'suspended',
+                    ],
+                ],
+                'default' => 'active',
+            ], [
+                'name'    => 'webhook_secret',
+                'title'   => 'Webhook Secret Token',
+                'type'    => 'text',
+                'info'    => 'Use this token in Zoho Webhook headers (X-Alamia-Billing-Token)',
+                'default' => \Illuminate\Support\Str::random(32),
+            ], [
+                'name'    => 'portal_url',
+                'title'   => 'Zoho Invoice Portal URL',
+                'type'    => 'text',
+                'info'    => 'Link where users can pay their invoices',
+            ],
+        ],
+    ],
 ];
