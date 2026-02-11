@@ -1,0 +1,55 @@
+Umair Zulqarnain (Deputy Manager Sales LHR)
+Adeel Bashir (Deputy Manager Sales LHR)
+JUNAID Mustafa (After Sale Engineer Head) LHR
+Usman Subhani (Tooling In charge) LHR
+
+Syed Amer Raza Gillani (Branch Manager) Islamabad
+
+Syed Shariq Hussain (Director) Owner
+Zeeshan Zafar (Executive Business development) Tender KHI
+
+Inayat Ullah (Head of Accounts) KHI
+Amir Qureshi (Maintenance & Service Manager) KHI
+
+Muhammad Ameen (Maintenance Incharge) KHI
+
+Rehman Moin (Senior Sales Manager) KHI
+
+Mujahid Ali Mian (Sales Manager) KHI
+
+Raees Mubeen (Sales Representative) KHI
+
+Muhammad Sami (Sales Coordinator) KHI
+Abbas Ali Admin & HR
+
+these all one will use few of other user also available but suggest you that make domain
+
+1) Director
+2) HR & Admin
+3)Accounts
+4)Sales Manager
+5)Sales executive
+6)Maintenance & Service Manager
+7)Maintenace and Service Executive
+
+------------------------------------------------------------------------------------------------------------------------
+GENERATED KTD USER CREDENTIALS (Default Password: password123)
+------------------------------------------------------------------------------------------------------------------------
+Name                   | Email                                 | Role                              | Branch
+-----------------------|---------------------------------------|-----------------------------------|--------------------
+Umair Zulqarnain       | umair.zulqarnain@kausartrade.com      | Sales Manager                     | Lahore
+Adeel Bashir           | adeel.bashir@kausartrade.com          | Sales Manager                     | Lahore
+JUNAID Mustafa         | junaid.mustafa@kausartrade.com        | Maintenance & Service Manager      | Lahore
+Usman Subhani          | usman.subhani@kausartrade.com         | Maintenace and Service Executive  | Lahore
+Syed Amer Raza Gillani | syed.amer.raza.gillani@kausartrade.com| Sales Manager                     | Islamabad
+Syed Shariq Hussain    | syed.shariq.hussain@kausartrade.com   | Director                          | Karachi HQ
+Zeeshan Zafar          | zeeshan.zafar@kausartrade.com         | Sales executive                   | Karachi HQ
+Inayat Ullah           | inayat.ullah@kausartrade.com          | Accounts                          | Karachi HQ
+Amir Qureshi           | amir.qureshi@kausartrade.com          | Maintenance & Service Manager      | Karachi HQ
+Muhammad Ameen         | muhammad.ameen@kausartrade.com        | Maintenace and Service Executive  | Karachi HQ
+Rehman Moeen           | rehman.moeen@kausartrade.com          | Sales Manager                     | Karachi HQ
+Mujahid Ali Mian       | mujahid.ali.mian@kausartrade.com      | Sales Manager                     | Karachi HQ
+Raees Mubeen           | raees.mubeen@kausartrade.com          | Sales executive                   | Karachi HQ
+Muhammad Sami          | muhammad.sami@kausartrade.com         | Sales executive                   | Karachi HQ
+Abbas Ali              | abbas.ali@kausartrade.com             | HR & Admin                        | Karachi HQ
+------------------------------------------------------------------------------------------------------------------------
