@@ -69,4 +69,9 @@ Route::group(['prefix' => 'v1'], function () {
      * AI Discovery routes.
      */
     require 'ai-routes.php';
+
+    /**
+     * Billing routes.
+     */
+    require 'billing-routes.php';
 });

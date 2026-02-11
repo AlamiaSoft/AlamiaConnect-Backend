@@ -2,8 +2,8 @@
 
 namespace Alamia\RestApi\Http\Resources\V1\Setting;
 
-use Illuminate\Http\Resources\Json\JsonResource;
 use Alamia\RestApi\Traits\JsonApiResponse;
+use Illuminate\Http\Resources\Json\JsonResource;
 
 class UserResource extends JsonResource
 {
@@ -33,6 +33,10 @@ class UserResource extends JsonResource
             ] : null,
             'created_at'      => $this->created_at,
             'updated_at'      => $this->updated_at,
+            'billing'         => [
+                'subscription_status' => core()->getConfigData('billing.subscription.settings.status'),
+                'portal_url'          => core()->getConfigData('billing.subscription.settings.portal_url'),
+            ],
         ])['data'];
     }
 }
