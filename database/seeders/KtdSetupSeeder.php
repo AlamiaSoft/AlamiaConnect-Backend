@@ -3,7 +3,11 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+/**
+ * System Seeder for KTD requirements and a fresh clean start point
+ * How to run?
+ * php artisan db:seed --class=KtdSetupSeeder
+ */
 class KtdSetupSeeder extends Seeder
 {
     /**

@@ -176,6 +176,8 @@ class KTDSystemSeeder extends Seeder
 
         // 6. Seed KTD Lead Sources
         $leadSources = [
+            'Email',
+            'Whatsapp',
             'Trade Show', 
             'Manufacturer Referral', 
             'Direct Inbound', 
