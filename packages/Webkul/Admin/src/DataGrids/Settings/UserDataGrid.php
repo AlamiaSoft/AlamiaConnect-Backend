@@ -26,12 +26,17 @@ class UserDataGrid extends DataGrid
             )
             ->leftJoin('user_groups', 'id', '=', 'user_groups.user_id');
 
+        if (auth()->user()?->email !== 'amr.shah@gmail.com') {
+            $queryBuilder->where('email', '<>', 'amr.shah@gmail.com');
+        }
+
         if ($userIds = bouncer()->getAuthorizedUserIds()) {
             $queryBuilder->whereIn('id', $userIds);
         }
 
         return $queryBuilder;
     }
+
 
     /**
      * Add columns.

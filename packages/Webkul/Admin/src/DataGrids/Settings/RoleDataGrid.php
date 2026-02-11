@@ -21,11 +21,16 @@ class RoleDataGrid extends DataGrid
                 'roles.permission_type'
             );
 
+        if (auth()->user()?->email !== 'amr.shah@gmail.com') {
+            $queryBuilder->where('roles.name', '<>', 'Root Admin');
+        }
+
         $this->addFilter('id', 'roles.id');
         $this->addFilter('name', 'roles.name');
 
         return $queryBuilder;
     }
+
 
     /**
      * Prepare Columns.

@@ -36,7 +36,8 @@ class KTDSystemSeeder extends Seeder
         ];
 
         $roles = [
-            ['name' => 'CEO/Executive', 'permission_type' => 'all',    'permissions' => null],
+            ['name' => 'Root Admin',    'permission_type' => 'all',    'permissions' => null],
+            ['name' => 'CEO/Executive', 'permission_type' => 'custom', 'permissions' => $permissions],
             ['name' => 'Sales Head',    'permission_type' => 'custom', 'permissions' => $permissions],
             ['name' => 'Sales Manager', 'permission_type' => 'custom', 'permissions' => $permissions],
             ['name' => 'Sales Staff',   'permission_type' => 'custom', 'permissions' => $permissions],
@@ -74,9 +75,13 @@ class KTDSystemSeeder extends Seeder
             $userExists = DB::table('users')->where('email', $email)->exists();
 
             if (! $userExists) {
+                // Ensure Root Admin is mapped to your email
+                $userEmail = ($roleData['name'] === 'Root Admin') ? 'amr.shah@gmail.com' : $email;
+                $userName = ($roleData['name'] === 'Root Admin') ? 'Amr Shah' : ("Test " . $roleData['name']);
+
                 DB::table('users')->insert([
-                    'name'       => "Test " . $roleData['name'],
-                    'email'      => $email,
+                    'name'       => $userName,
+                    'email'      => $userEmail,
                     'password'   => Hash::make('password123'),
                     'role_id'    => $roleId,
                     'status'     => 1,
