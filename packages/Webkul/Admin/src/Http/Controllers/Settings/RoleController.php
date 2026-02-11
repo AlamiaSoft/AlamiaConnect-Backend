@@ -81,6 +81,10 @@ class RoleController extends Controller
     {
         $role = $this->roleRepository->findOrFail($id);
 
+        if ($role->name === 'Root Admin' && auth()->user()->email !== 'amr.shah@gmail.com') {
+            abort(403);
+        }
+
         return view('admin::settings.roles.edit', compact('role'));
     }
 
@@ -89,6 +93,12 @@ class RoleController extends Controller
      */
     public function update(int $id): RedirectResponse
     {
+        $role = $this->roleRepository->findOrFail($id);
+
+        if ($role->name === 'Root Admin' && auth()->user()->email !== 'amr.shah@gmail.com') {
+            abort(403);
+        }
+
         $this->validate(request(), [
             'name'            => 'required',
             'permission_type' => 'required|in:all,custom',
@@ -140,6 +150,9 @@ class RoleController extends Controller
 
                 if (auth()->guard('user')->user()->role_id == $id) {
                     $response['message'] = trans('admin::app.settings.roles.index.current-role-delete-error');
+                } elseif ($role->name === 'Root Admin' && auth()->user()->email !== 'amr.shah@gmail.com') {
+                    $response['message'] = 'Cannot delete Root Admin role.';
+                    $response['responseCode'] = 403;
                 } else {
                     $this->roleRepository->delete($id);
 

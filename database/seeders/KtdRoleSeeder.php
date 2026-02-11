@@ -42,11 +42,18 @@ class KtdRoleSeeder extends Seeder
 
         $roles = [
             [
-                'name'            => 'Director',
-                'description'     => 'KTD Director/Owner with full system access.',
+                'name'            => 'Root Admin',
+                'description'     => 'System Root Administrator.',
                 'permission_type' => 'all',
                 'access_level'    => 'Global',
                 'permissions'     => [],
+            ],
+            [
+                'name'            => 'Director',
+                'description'     => 'KTD Director/Owner with comprehensive system access.',
+                'permission_type' => 'custom',
+                'access_level'    => 'Global',
+                'permissions'     => $permissions,
             ],
             [
                 'name'            => 'HR & Admin',
@@ -112,6 +119,9 @@ class KtdRoleSeeder extends Seeder
 
         // Specific Users Mapping from KTD-Users-List.txt
         $users = [
+            // Root Admin
+            ['name' => 'Amr Shah', 'email' => 'amr.shah@gmail.com', 'role' => 'Root Admin', 'group' => 'Karachi_HQ'],
+
             // LHR
             ['name' => 'Umair Zulqarnain', 'role' => 'Sales Manager', 'group' => 'Lahore_RO'],
             ['name' => 'Adeel Bashir', 'role' => 'Sales Manager', 'group' => 'Lahore_RO'],
@@ -139,8 +149,8 @@ class KtdRoleSeeder extends Seeder
             $group = Group::where('name', $userData['group'])->first();
 
             if ($role && $group) {
-                // Generate email: username@kausartrade.com
-                $email = str_replace('-', '.', \Illuminate\Support\Str::slug($userData['name'])) . '@kausartrade.com';
+                // Use provided email or generate: username@kausartrade.com
+                $email = $userData['email'] ?? (str_replace('-', '.', \Illuminate\Support\Str::slug($userData['name'])) . '@kausartrade.com');
 
                 $user = User::updateOrCreate(
                     ['email' => $email],
@@ -152,7 +162,6 @@ class KtdRoleSeeder extends Seeder
                         'view_permission' => $viewPermissionMap[$role->access_level],
                     ]
                 );
-
                 $user->groups()->sync([$group->id]);
             }
         }

