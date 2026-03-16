@@ -301,6 +301,37 @@
                     </tbody>
                 </table>
 
+                <!-- Availability -->
+                @if($quote->stock_status || $quote->estimated_delivery || $quote->availability_note)
+                    <table class="{{ $locale }}">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <b>Availability</b>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    @if($quote->stock_status)
+                                        <div style="margin-bottom: 4px;"><strong>Stock Status:</strong> {{ $quote->stock_status }}</div>
+                                    @endif
+
+                                    @if($quote->estimated_delivery)
+                                        <div style="margin-bottom: 4px;"><strong>Estimated Delivery:</strong> {{ $quote->estimated_delivery }}</div>
+                                    @endif
+
+                                    @if($quote->availability_note)
+                                        <div><strong>Note:</strong> {{ $quote->availability_note }}</div>
+                                    @endif
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                @endif
+
                 <!-- Items -->
                 <div class="items">
                     <table class="{{ app()->getLocale   () }}">
